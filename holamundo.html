@@ -1,17 +1,27 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Hola Mundo</title>
+    <title>Hola Mundo con Nombre</title>
 </head>
 <body>
 
-<h1>Mi Primer Programa en JavaScript</h1>
+<h1>Saludo Personalizado</h1>
 
 <script>
-    // JavaScript se ejecuta en el navegador del cliente
-    document.write("¡Hola, mundo!");
+    // Solicitar al usuario que ingrese su nombre
+    var nombre = prompt("Por favor, ingresa tu nombre:");
+
+    // Comprobar si se ingresó un nombre
+    if (nombre) {
+        // Mostrar un saludo personalizado
+        document.write("¡Hola, " + nombre + "!");
+    } else {
+        // Mostrar un saludo genérico si no se ingresa un nombre
+        document.write("¡Hola, mundo!");
+    }
 </script>
 
 </body>
 </html>
+
 
